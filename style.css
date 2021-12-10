@@ -24,12 +24,11 @@ width: 40px;
 padding: 30px;
 background-color: white;
 margin-bottom: 1px;
+display: inline-block;
 }
 
-
-
 #pixel-board{
-    display: inline-block;
+
 }
 
 
