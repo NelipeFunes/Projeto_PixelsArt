@@ -29,6 +29,4 @@ function changeColor(){
     
     let colorSelect = event.target;
     colorSelect.classList.add('selected');
-
-
 }
