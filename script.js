@@ -23,10 +23,31 @@ red.addEventListener('click', changeColor);
 green.addEventListener('click', changeColor);
 blue.addEventListener('click', changeColor);
 
+
+
 function changeColor(){
     let colorSelected = document.querySelector(".selected");
     colorSelected.classList.remove('selected')
     
     let colorSelect = event.target;
     colorSelect.classList.add('selected');
+}
+let pixel = document.getElementById('pixel-board');
+pixel.addEventListener('click', pintarPixel);
+
+function pintarPixel(){
+    let colorSelected = document.querySelector(".selected");
+    colorSelecionada = colorSelected.getAttribute('id')
+if (colorSelecionada === 'preto') {
+    event.target.style.backgroundColor = 'black';
+  } 
+  else if (colorSelecionada === 'vermelho') {
+    event.target.style.backgroundColor = 'red';
+  } 
+  else if (colorSelecionada === 'verde') {
+    event.target.style.backgroundColor = 'green';
+  } 
+  else if (colorSelecionada === 'azul') {
+    event.target.style.backgroundColor = 'blue';
+  }
 }
