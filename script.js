@@ -13,6 +13,15 @@ for(let index = 0; index<linhas; index+=1){
     }
 }
 
+let btn = document.createElement('button');
+btn.innerHTML = "Limpar";
+btn.setAttribute('id','clear-board')
+btn.onclick = function clearPixels(){
+  document.location.reload(true)
+}
+document.querySelector(".button").appendChild(btn)
+
+
 let black = document.getElementById('preto');
 let red = document.getElementById('vermelho');
 let green = document.getElementById('verde');
